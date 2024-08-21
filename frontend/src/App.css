@@ -1,0 +1,418 @@
+h1 {
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4c42b1;
+    color: #fff;
+    padding: 10px;
+}
+  
+.navdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navdiv span {
+    font-size: 24px;
+}
+
+.navlinks {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+ 
+.navlinks ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffc107;
+}
+
+.addemployeeheader {
+    color: #333;
+    padding: 10px;
+    text-align: center;
+}
+  
+.addemployeetitle {
+    margin: 0;
+}
+  
+.addform {
+    margin: 10px 50px;
+    padding: 10px 50px;
+    border: 5px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formdiv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+  
+.formcontent {
+    flex: 1 1 47%;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+  
+.forminput {
+    width: 100%;
+    padding: 5px;
+    display: block;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+.errormessage {
+    color: red;
+    margin-top: 5px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+  
+.btnaddemployee {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.btnaddemployee:hover {
+    background-color: #0056b3;
+}
+
+.searchrow {
+    margin-top: 20px;
+    margin: 30px;
+}
+  
+.filterrow {
+    margin-bottom: 10px;
+    margin: 40px;
+}
+  
+.clearrow {
+    margin-bottom: 10px;
+    margin: auto 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.btnclearfilter {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.btnclearfilter:hover {
+    background-color: #c82333;
+}
+
+.tablecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+  
+.employeetable {
+    width: 100%;
+    border-collapse: collapse;
+    max-width: 1300px;
+}
+  
+.employeetable th,
+.employeetable td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+  
+.employeetable th {
+    background-color: #f2f2f2;
+}
+  
+.editcontainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.editemployeeheader {
+    color: #333;
+    padding: 10px;
+    text-align: center;
+}
+  
+.editemployeetitle {
+    margin: 0;
+}
+  
+.employeeedit {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 4px;
+}
+  
+.editemployeecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+  
+.editemployeerow {
+    display: flex;
+    justify-content: center;
+}
+  
+.editemployeecol {
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.btneditemployee {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.btneditemployee:hover {
+    background-color: #0056b3;
+}
+
+.checkbox {
+    margin-left: 10px;
+}
+
+.employeedetailsheader {
+    color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.employeesdetailsbody {
+    margin: 10px 50px;
+    padding: 10px 50px;
+    border: 5px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filtercontainer {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+}
+  
+.filterheader {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+  
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+.filter {
+    flex: 1 1 45%;
+    margin-bottom: 5px;
+    margin: 10px;
+}
+  
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+  
+.form-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 14px;
+}
+  
+.form-select:hover,
+.form-select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+  
+td {
+    padding: 8px;
+}
+  
+.btn {
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+}
+  
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+  
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: 1px solid #dc3545;
+}
+  
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+}
+  
+.btn-info {
+    background-color: #17a2b8;
+    color: #fff;
+    border: 1px solid #17a2b8;
+}
+  
+.btn-info:hover {
+    background-color: #138496;
+    border-color: #138496;
+}
+  
+.searchformcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.form-control {
+    width: 600px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+  
+.btn {
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+  
+.btn-outline-light {
+    background-color: transparent;
+    color: #0112fd;
+    border: 1px solid #138496;
+}
+  
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #00899e;
+    border: 1px solid #006f81;
+}
+  
+.tableemployee {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+.tablehead {
+    background-color: #f2f2f2;
+}
+  
+.tablerow {
+    border-bottom: 1px solid #ddd;
+}
+  
+th {
+    padding: 8px;
+    text-align: left;
+}
+  
+.tablebody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+  
+.tablebody tr:hover {
+    background-color: #f2f2f2;
+}
+
+.footer {
+    background-color: #4c42b1;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
